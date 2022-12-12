@@ -1,0 +1,7 @@
+{
+    "name": "orizonmedia/om_pdf_embed_api",
+    "description": "Drupal 9 module for embed adobe PDF API",
+    "require": {
+        "php": ">=8.0",
+    }
+}
