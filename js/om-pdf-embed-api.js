@@ -36,9 +36,9 @@
        /* Initialize the AdobeDC View object */
        var adobeDCView = new AdobeDC.View({
            /* Pass your registered client id */
-           clientId: "a7fc2273ebd44af9a844189fbbd14313",
+           clientId: "XXX",
            locale: "fr-FR",
-           measurementId: "UA-68263874-1"
+           measurementId: "XXX"
        });
 
 
