@@ -8,4 +8,6 @@
 //attacher la librarie à toutes les pages !
 function om_pdf_embed_api_page_attachments(array &$attachments) {
    $attachments['#attached']['library'][] = 'om_pdf_embed_api/om_pdf_embed_api_custom';
+   $config = \Drupal::config('om_pdf_embed_api.settings');
+   $attachments['#attached']['drupalSettings']['apikey'] = $config->get('apikey');;
  }

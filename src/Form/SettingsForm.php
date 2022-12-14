@@ -28,10 +28,11 @@ class SettingsForm extends ConfigFormBase {
    * {@inheritdoc}
    */
   public function buildForm(array $form, FormStateInterface $form_state) {
-    $form['example'] = [
+    $form['apikey'] = [
       '#type' => 'textfield',
-      '#title' => $this->t('Example'),
-      '#default_value' => $this->config('om_pdf_embed_api.settings')->get('example'),
+      '#title' => $this->t('Adobe API Key'),
+      '#default_value' => $this->config('om_pdf_embed_api.settings')->get('apikey'),
+      '#description' => "ok! ma description",
     ];
     return parent::buildForm($form, $form_state);
   }
@@ -39,19 +40,20 @@ class SettingsForm extends ConfigFormBase {
   /**
    * {@inheritdoc}
    */
+   /*
   public function validateForm(array &$form, FormStateInterface $form_state) {
     if ($form_state->getValue('example') != 'example') {
       $form_state->setErrorByName('example', $this->t('The value is not correct.'));
     }
     parent::validateForm($form, $form_state);
-  }
+}*/
 
   /**
    * {@inheritdoc}
    */
   public function submitForm(array &$form, FormStateInterface $form_state) {
     $this->config('om_pdf_embed_api.settings')
-      ->set('example', $form_state->getValue('example'))
+      ->set('apikey', $form_state->getValue('apikey'))
       ->save();
     parent::submitForm($form, $form_state);
   }

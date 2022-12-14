@@ -16,7 +16,7 @@ class OmPdfEmbedApiController extends ControllerBase {
 
     $build['content'] = [
       '#type' => 'item',
-      '#markup' => $this->t('It works!'),
+      '#markup' => $this->t('It works 2!'),
     ];
 
     return $build;

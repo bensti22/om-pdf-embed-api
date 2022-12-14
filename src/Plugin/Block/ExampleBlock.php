@@ -1,28 +1,28 @@
 <?php
-
+/*
 namespace Drupal\om_pdf_embed_api\Plugin\Block;
 
 use Drupal\Core\Block\BlockBase;
 
-/**
- * Provides an example block.
- *
- * @Block(
- *   id = "om_pdf_embed_api_example",
- *   admin_label = @Translation("Example"),
- *   category = @Translation("OM PDF Embed API")
- * )
- */
+
 class ExampleBlock extends BlockBase {
 
-  /**
-   * {@inheritdoc}
-   */
+
   public function build() {
+
+     $config = \Drupal::config('om_pdf_embed_api.settings');
+
+
     $build['content'] = [
-      '#markup' => $this->t('It works!'),
+      '#markup' => $config->get('example'),
     ];
+
+
+
+
+
     return $build;
   }
 
 }
+*/

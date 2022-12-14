@@ -3,3 +3,9 @@ type: module
 description: Provides additional functionality for the site.
 package: Custom
 core_version_requirement: ^9 || ^10
+dependencies:
+ - drupal:block
+ - drupal:config
+ - core/drupal
+ - core/jquery
+ - core/drupalSettings
