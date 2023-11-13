@@ -1,0 +1,7 @@
+om_pdf_embed_api.settings_form:
+  path: '/admin/config/system/om-pdf-embed-api'
+  defaults:
+    _title: 'OM PDF Embed API settings'
+    _form: 'Drupal\om_pdf_embed_api\Form\SettingsForm'
+  requirements:
+    _permission: 'administer om_pdf_embed_api configuration'

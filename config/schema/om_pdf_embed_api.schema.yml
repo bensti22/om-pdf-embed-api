@@ -1,0 +1,8 @@
+# Schema for the configuration files of the OM PDF Embed API module.
+om_pdf_embed_api.settings:
+  type: config_object
+  label: 'OM PDF Embed API settings'
+  mapping:
+    example:
+      type: string
+      label: 'Example'

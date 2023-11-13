@@ -1,0 +1,10 @@
+{
+    "name": "orizonmedia/om_pdf_embed_api",
+    "type": "drupal-module",
+    "description": "Drupal 9 module for embed adobe PDF API",
+    "license": "GPL-2.0-or-later",
+    "require": {
+        "php": ">=8.0"
+    }
+
+}
